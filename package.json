@@ -1,0 +1,15 @@
+{
+  "name": "fibapi",
+  "version": "1.0.0",
+  "description": "Fibonacci's Api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fib",
+    "api"
+  ],
+  "author": "Stefani S",
+  "license": "MIT"
+}
