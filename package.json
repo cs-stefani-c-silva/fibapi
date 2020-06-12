@@ -11,5 +11,8 @@
     "api"
   ],
   "author": "Stefani S",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/hapi": "^19.1.1"
+  }
 }
