@@ -1,10 +1,9 @@
+const fibHandler = require('./handler/fib')
+
 module.exports = [
      {
         method: 'GET',
-        path: '/fib',
-        handler: (request, h) => {
-
-            return 'Say position!';
-        }
+        path: '/fib/{pos}',
+        handler: fibHandler.fib
     }
 ]
