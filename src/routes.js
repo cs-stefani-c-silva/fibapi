@@ -1,4 +1,4 @@
-const fibHandler = require('./handler/fibHandler')
+const fibHandler = require('./fibHandler')
 const Joi = require('@hapi/joi')
 
 module.exports = [
