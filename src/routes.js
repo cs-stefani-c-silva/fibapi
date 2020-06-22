@@ -1,4 +1,5 @@
 const fibHandler = require('./handler/fibHandler')
+const Joi = require('@hapi/joi')
 
 module.exports = [
      {
@@ -9,13 +10,12 @@ module.exports = [
             description: `Get number from Fibonacci's sequence`,
             notes: `Return the value in Fibonacci's sequence`,
             tags: ['api'],
-            /*validate: {
+            validate: {
                 params: Joi.object({
-                    id: Joi.number()
-                    .required()
-                    .description('the number position')
+                    pos: Joi.number()
+                    .required().min(1)
                 })
-            }*/
+            }
         }
     }
 ]
