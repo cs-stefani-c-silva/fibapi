@@ -2,7 +2,7 @@ const fibHandler = require('./fibHandler')
 const Joi = require('@hapi/joi')
 
 module.exports = [
-     {
+    {
         method: 'GET',
         path: '/fib/{pos}',
         options: {
@@ -15,6 +15,15 @@ module.exports = [
                     pos: Joi.number()
                     .required().min(1)
                 })
+            }
+        }
+    },
+    {
+        method: 'GET',
+        path: '/',
+        options: {
+            handler: (request, h) => {
+                return 'Hello!'
             }
         }
     }
