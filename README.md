@@ -16,3 +16,14 @@ npm start
 
 ## Swagger
 P/ consumir a API, acessar a documentação: [http://localhost:3000/documentation](http://localhost:3000/documentation)
+
+## Testes
+1. Rodar testes
+```
+npm test
+```
+
+2. Modo watch
+```
+npm run test:watch
+```
